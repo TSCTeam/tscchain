@@ -1,7 +1,7 @@
 What is Tsc?
 -------------
 
-Tsc is a decentralized blockchain project built on Bitcoin's UTXO model, with support for Ethereum Virtual Machine based smart contracts, and secured by a proof of stake consensus model. It achieves this through the revolutionary Account Abstraction Layer which allows the EVM to communicate with Tsc's Bitcoin-like UTXO blockchain. For more general information about Tsc as well as links to join our community, go to https://tsc.org
+Tsc is a decentralized blockchain project built on Bitcoin's UTXO model, with support for Ethereum Virtual Machine based smart contracts, and secured by a proof of stake consensus model. It achieves this through the revolutionary Account Abstraction Layer which allows the EVM to communicate with Tsc's Bitcoin-like UTXO blockchain. For more general information about Tsc as well as links to join our community, go to http://www.tschain.top/
 
 Welcome to the Tsc Ignition Main Network. This is the main network where the tokens hold value and should be guarded very carefully. If you are testing the network, or developing unstable software on Tsc, we highly recommend using either testnet or regtest mode. 
 
@@ -58,7 +58,7 @@ Building Tsc Core
     # If you want to build the Qt GUI:
     sudo apt-get install libqt5gui5 libqt5core5a libqt5dbus5 qttools5-dev qttools5-dev-tools libprotobuf-dev protobuf-compiler qrencode
 
-    git clone https://github.com/tscproject/tsc --recursive
+    git clone https://github.com/TSCTeam/tscchain.git --recursive
     cd tsc
 
     # Note autogen will prompt to install some more dependencies if needed
@@ -88,7 +88,7 @@ Here is a brief description for compiling Tsc on CentOS, for more details please
     sudo yum install qt5-qttools-devel protobuf-devel qrencode-devel
     
     # Building Tsc
-    git clone --recursive https://github.com/tscproject/tsc.git
+    git clone --recursive https://github.com/TSCTeam/tscchain.git
     cd tsc
     ./autogen.sh
     ./configure
@@ -115,26 +115,7 @@ Then install [Homebrew](https://brew.sh).
 
 NOTE: Building with Qt4 is still supported, however, could result in a broken UI. Building with Qt5 is recommended.
 
-#### Build Tsc Core
 
-1. Clone the tsc source code and cd into `tsc`
-
-        git clone --recursive https://github.com/tscproject/tsc.git
-        cd tsc
-
-2.  Build tsc-core:
-
-    Configure and build the headless tsc binaries as well as the GUI (if Qt is found).
-
-    You can disable the GUI build by passing `--without-gui` to configure.
-
-        ./autogen.sh
-        ./configure
-        make
-
-3.  It is recommended to build and run the unit tests:
-
-        make check
 
 ### Run
 
