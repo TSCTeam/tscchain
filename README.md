@@ -21,43 +21,7 @@ These are some resources that might be helpful in understanding Tsc. Note that t
 
 Basic usage resources:
 
-* [Official Tsc Usage Guide](https://github.com/tscproject/tsc/wiki/Tsc-Wallet-Tutorial)
-* [Unofficial Tsc staking tutorial](https://steemit.com/tsc/@cryptominder/tsc-staking-tutorial-using-tsc-qt)
-* [Unofficial Tsc staking tutorial on Raspberry Pi](https://steemit.com/tsc/@cryptominder/tsc-staking-tutorial-using-tscd-on-a-raspberry-pi-3)
-* [Unofficial guide for keeping your wallet safe](https://steemit.com/tsc/@cryptominder/encrypting-backing-up-and-restoring-your-tsc-wallet)
-* [Block explorer](https://explorer.tsc.org)
-* [Unofficial block explorer](https://tscexplorer.io/)
-* [Unofficial Raspberry Pi Web UI](https://github.com/rpiwalletui/tsc-ui)
-
-Development resources:
-
-* [Deploying a custom token to Tsc](https://blog.tsc.org/tsc-custom-token-walkthrough-467d725fa27d)
-* [Early example faucet contract](http://earlz.net/view/2017/06/30/2144/the-tsc-sparknet-faucet)
-* [Unofficial Tsc Hello World tutorial](https://steemit.com/tsc/@cryptominder/quantum-tsc-blockchain-developer-tutorial-hello-world)
-* [Tsc Book - A Developer's Guide To TSC](https://github.com/tscproject/tscbook)
-
-General Info about Tsc:
-
-* [Mainnet event AMA](https://www.reddit.com/r/Tsc/comments/6zs8t0/official_tsc_ama_thread_starts_at_10pm_beijing/)
-* [Tsc's PoS vs CASPER](https://www.reddit.com/r/Tsc/comments/788oa5/tscs_pos_vs_casper_and_the_nothingatstake_problem/)
-* [Technical article explaining Tsc's PoS model in depth](http://earlz.net/view/2017/07/27/1904/the-missing-explanation-of-proof-of-stake-version)
-* [Unofficial What is Tsc article](https://storeofvalue.github.io/posts/what-is-tsc-without-the-bullshit/)
-
-Developer's Tools
------------------
-
-* Smart contract deployment tool
-  * https://github.com/tscproject/solar
-* DApp JavaScript Library
-  * https://github.com/tscproject/tscjs
-* A toolkit for building tsc light wallets
-  * https://github.com/tscproject/tscjs-wallet
-* CORS tscd RPC proxy for DApp
-  * https://github.com/tscproject/tscportal
-* Docker images for running tsc services
-  * https://github.com/tscproject/tsc-docker
-* HTTP API that powers the block explorer and the TSC web wallet
-  * https://github.com/tscproject/insight-api
+* [Block explorer](http://block.tschain.top/tsc-explorer/)
 
 
 What is Tsc Core?
@@ -75,31 +39,6 @@ Tsc Core currently implements the following:
 * "Prune" mode, which minimizes disk usage
 * Regtest mode, which enables developers to very quickly build their own private Tsc network for Dapp testing
 * Compatibility with the Bitcoin Core set of RPC commands and APIs
-
-Alternative Wallets
--------------------
-
-Tsc Core uses a full node model, and thus requires downloading the entire blockchain. If you do not need the entire blockchain, and do not intend on developing smart contracts, it may be more ideal to use an alternative wallet such as one of our light wallets that can be synchronized in a matter of seconds. 
-
-### Tsc Electrum
-
-A light wallet that supports the Ledger hardware wallet and is based on the well known Electrum wallet software. 
-
-Download: https://github.com/tscproject/tsc-electrum/releases
-
-### iOS and Android Wallets
-
-These wallets run on mobile devices and synchronize quickly. 
-
-Android Download: https://play.google.com/store/apps/details?id=org.tsc.wallet
-
-iOS Download: https://github.com/tscproject/tsc-ios (open source, we are still working with Apple to get approval for their app store)
-
-### Ledger Chrome Wallet
-
-This light wallet runs in your Chrome browser as a browser extension. This wallet requires a Ledger device to use.
-
-How to install: https://ledger.zendesk.com/hc/en-us/articles/115003776913-How-to-install-and-use-Tsc-with-Ledger
 
 
 Building Tsc Core
@@ -208,16 +147,6 @@ License
 
 Tsc is GPLv3 licensed.
 
-Development Process
--------------------
-
-The `master` branch is regularly built and tested, but is not guaranteed to be
-completely stable. [Tags](https://github.com/tscproject/tsc/tags) are created
-regularly to indicate new official, stable release versions of Tsc.
-
-The contribution workflow is described in [CONTRIBUTING.md](CONTRIBUTING.md).
-
-Developer IRC can be found on Freenode at #tsc-dev.
 
 Testing
 -------
